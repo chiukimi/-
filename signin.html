@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form action="signin.php" method="post">
+<body>
+<p>嗨!歡迎您加入網站會員</p> <p style="color:red ;">表格內*請務必確實填寫</p>
+<p>1.設定您的帳號密碼</p>
+<table border="1">
+    <tr>
+        <td>
+            <div>
+                <p style="color:red ;">*</p><p>會員帳號</p>
+            </div>
+        </td>
+        <td>
+        <div>    
+            
+                <input type="email" name="loginemail">此為未來登入帳號，請務必留下正確的email
+            
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                密碼
+            </div>
+           
+        </td>
+        <td>
+            <div>
+                
+                <input type="text" name="password"> <br> 8-20字元，至少包含2個英文與2個數字，不含空白、雙引號、星號、括號、大於、小於。
+            
+            </div>
+        </td>
+    </tr>
+    </table>
+
+    <p>2.填寫個人資料</p>
+
+<table border="1">
+    </tr>
+        <td>
+            <div>
+            會員姓名
+            </div>
+        </td>
+        <td>
+            <div>
+          
+            <input type="text" name="membername" required="required"> <br> 請輸入您的真實姓名，否則將無法取得相關活動(ex:贈品...)資格。
+            
+            </div>
+        </td>
+    <tr>
+        <td>
+            <div>
+               性別 
+            </div>
+        </td>
+        <td>
+            <div>
+                
+                <input type="radio" name="sex" value="male" checked required="required">男
+                <input type="radio" name="sex" value="female" required="required" >女
+                
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            會的能力
+        </td>
+        <td>
+            <input type="checkbox" name="skill[]" value="web">網頁開發
+            <input type="checkbox" name="skill[]" value="design">平面設計
+            <input type="checkbox" name="skill[]" value="rd">程式設計
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                出生年
+            </div>
+        </td>
+           
+            
+        <td>
+            <label for="year"></label>
+            <select name="year">
+                <option value="1980" selected>1980</option>
+                <option value="2004">2004</option>
+                <option value="2007">2007</option>
+                <option value="1984">1984</option>
+        </td>
+    </tr>
+    <tr >
+        <td rowspan="2">
+            連絡電話
+        </td>
+        <td>
+           行動電話<input type="text" name="cellphonenumber">
+        </td>
+    </tr>
+    <tr>
+        
+    </tr>
+    <tr>
+        <td>
+            訂閱電子報
+        </td>
+        <td>
+            <input type="checkbox" name="epaper[]" value="y">訂閱電子報
+        </td>
+    </tr>
+    <br>
+</table>
+<input type="submit" value="送出表單">
+</body>
+</form>
+</html>

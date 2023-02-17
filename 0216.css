@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  body {
+    background: #f7f7f7;
+    font-family: Questrial, ;
+  }
+  
+  .warning {
+    background: #db4c3f;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .error {
+    color: #db4c3f;
+    margin-bottom: 10px;
+  }
+  
+  .board {
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 3px #fff;
+    border-radius: 5px;
+  }
+  
+  .board__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .board__btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #c2dffb;
+    color: #583c63;
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .board__btn-block h4 {
+    margin: 10px 0;
+    text-align: right;
+    color: #583c63;
+  }
+  
+  .board__tittle {
+    margin-bottom: 24px;
+  }
+  
+  .board__nickname {
+    margin-bottom: 10px; 
+  }
+  
+  .board__nickname input {
+    border: 1px solid #c2dffb;
+    padding: 5px;
+  }
+  
+  .board__new-comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c2dffb;
+  }
+  
+  .board__submit-btn{
+    padding: 8px 16px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #c2dffb;
+    color: #583c63;
+    background: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .board__hr {
+    margin: 0px auto 20 auto;
+    height: 1px;
+    background: #e8e8ee;
+    min-width: 95%;
+  }
+  
+  .card {
+    display: flex;
+    margin: 24px 0;
+    min-width: 70px;
+  }
+  
+  .card__avatar {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e4f0fb;
+  }
+  
+  .card__body {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  
+  .card__info {
+    font-size: 16px;
+  }
+  
+  .card__author {
+    color: #5c9edc;
+    font-weight: 700;
+  }
+  
+  .card__time {
+    color: #a0a0a0;
+
+  }
+  
+  .card__content {
+    margin-top: 8px;
+    max-width: 100%;
+    letter-spacing: 1px;
+    word-break: break-all;
+    white-space: pre-line;
+  }
